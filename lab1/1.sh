@@ -1,12 +1,16 @@
-if [[ $1 -le $2 ]]
+A=$(bc <<< "$1")
+B=$(bc <<< "$2")
+C=$(bc <<< "$3")
+
+if [[ $(bc <<< "$A < $B") ]]
 then 
-    if [[ $2 -le $3 ]]
-    then echo $3
-    else echo $2
+    if [[ $(bc <<< "$B < $C") ]]
+    then echo $C
+    else echo $B
     fi
 else 
-    if [[ $3 -le $1 ]]
-    then echo $1
-    else echo $3
+    if [[ $(bc <<< "$C < $A") ]]
+    then echo $A
+    else echo $C
     fi
 fi
