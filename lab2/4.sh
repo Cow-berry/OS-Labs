@@ -1,0 +1,1 @@
+ps -e | tail -n+2 | awk '{print "/proc/" $1 "/status\n/proc/" $1 "/sched"}' | xargs -n2 cat | grep -w "Pid\|PPid\|sum_exec_runtime\|nr_switches" | awk '{print $NF} END {print "\n"}' | xargs -n4 | sort -k2 -n |  awk '{print "ProcessId=" $1 " : Parent_ProcessId=" $2 " : Average_Running_Time=" $3/$4}'
