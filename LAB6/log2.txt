@@ -1,0 +1,9 @@
+2.1)
+hostname
+net share temp="C:\Users\Anatoly\LAB6\TEST"
+2.2)
+copy "C:\Users\Anatoly\Downloads\flstudio_win_20.8.3.2304.exe" \\HOME-PC\temp /Z
+2.3)
+schtasks /create /sc minute /tn "copying to net resource" /tr "C:\Users\Anatoly\LAB6\copy_to_net.bat"
+2.5)
+comp C:\Users\Anatoly\Downloads\flstudio_win_20.8.3.2304.exe \\HOME-PC\temp\flstudio_win_20.8.3.2304.exe

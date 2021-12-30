@@ -1,0 +1,12 @@
+1.1)
+ver > ver
+systeminfo > systeminfo
+wmic diskdrive get model,serialNumber,size,mediaType > wmic
+1.2)
+mkdir TEST
+copy * TEST\
+cd TEST
+1.3)
+type * > sum
+1.4)
+for %i in (*) do if /i not "%i"=="sum" del "%i"

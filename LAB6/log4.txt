@@ -1,0 +1,3 @@
+4.x)
+driverquery /V > DRIVERS
+type DRIVERS | sort 

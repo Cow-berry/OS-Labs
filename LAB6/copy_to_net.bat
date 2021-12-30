@@ -1,0 +1,1 @@
+copy "C:\Users\Anatoly\Downloads\flstudio_win_20.8.3.2304.exe" \\HOME-PC\temp /Z
