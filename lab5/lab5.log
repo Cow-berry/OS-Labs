@@ -1,0 +1,3 @@
+[ 1652.305745] Out of memory: Killed process 1561 (bash) total-vm:2652212kB, anon-rss:1679868kB, file-rss:72kB, shmem-rss:0kB, UID:0
+[ 1652.375784] oom_reaper: reaped process 1561 (bash), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+31000000
